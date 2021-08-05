@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./imgs/search.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="No more waiting in queues" />
+    <link rel="apple-touch-icon" href="./imgs/search.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@KvsSankar1" />
+    <meta name="twitter:creator" content="@KvsSankar1" />
+    <meta name="twitter:title" content="seo-builder" />
+    <meta
+      name="twitter:description"
+      content="Make your web app deploying ready"
+    />
+    <meta name="twitter:image" content="./imgs/search.png" />
+    <meta name="twitter:domain" content="https://seo-builder.herokuapp.com/" />
+
+    <meta property="og:title" content="VinManager" data-dynamic="true" />
+    <meta property="og:site_name" content="VinManager" data-dynamic="true" />
+    <meta property="og:url" content="https://seo-builder.herokuapp.com/" />
+    <meta
+      property="og:description"
+      content="Make your web app deploying ready"
+      data-dynamic="true"
+    />
+    <meta property="og:type" content="article" data-dynamic="true" />
+    <meta property="og:image" content="./imgs/search.png" />
+    <meta property="og:image:type" content="image/png" data-dynamic="true" />
+    <meta property="og:image:width" content="1200" data-dynamic="true" />
+    <meta property="og:image:height" content="630" data-dynamic="true" />
+    <meta
+      property="article:author"
+      content="https://www.facebook.com/reacter.reacter.7/"
+      data-dynamic="true"
+    />
+    <meta
+      property="article:publisher"
+      content="https://www.facebook.com/reacter.reacter.7/"
+      data-dynamic="true"
+    />
+    <meta property="og:locale" content="en_US" />
+    <title>seo-builder | VacciQ</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-messaging.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCgdoGOesEWA9xf4SYbfTm9m1TOH4WgpJ4",
+        authDomain: "vacciq-90b12.firebaseapp.com",
+        projectId: "vacciq-90b12",
+        storageBucket: "vacciq-90b12.appspot.com",
+        messagingSenderId: "926551375844",
+        appId: "1:926551375844:web:2fd80e0af934a7cdad11f1",
+        measurementId: "G-Y2DX6SPSJ7",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("../firebase-messaging-sw.js")
+            .then((reg) => {
+              const messaging = firebase.messaging();
+              messaging.usePublicVapidKey(
+                "BKhV6YfXINZH-WSFUe_n8NNOsnTVKNlFpDHoubrqYLeEYfbHtsjqfG8pS7-wMU-YiKp-Z3ZBw3QXuQfiMmUizho"
+              );
+              messaging.requestPermission().then(() => {
+                console.log("granted");
+              });
+              messaging
+                .getToken()
+                .then((currentToken) => {
+                  const token = localStorage.getItem("token");
+                  const config = {
+                    headers: {
+                      "Content-type": "application/json",
+                    },
+                  };
+                  if (token) config.headers["auth-token"] = token;
+                  if (currentToken) {
+                    axios
+                      .post(
+                        "/api/user/token",
+                        {
+                          token: currentToken,
+                        },
+                        config
+                      )
+                      .then((res) => {
+                        console.log(res.data);
+                      });
+                    localStorage.setItem("fcmtoken", currentToken);
+                    console.log(currentToken);
+                  } else {
+                    console.log(
+                      "No Instance ID token available. Request permission to generate one."
+                    );
+                    updateUIForPushPermissionRequired();
+                    setTokenSentToServer(false);
+                  }
+                })
+                .catch((err) => {
+                  console.log(
+                    "An error occurred while retrieving token. ",
+                    err
+                  );
+                  showToken("Error retrieving Instance ID token. ", err);
+                });
+              messaging.onMessage((payload) => {
+                console.log(payload);
+                var obj = payload.notification;
+                console.log(obj);
+                var notification = new Notification(obj.title, {
+                  body: obj.body,
+                  icon:
+                    "https://res.cloudinary.com/sankarkvs/image/upload/v1619902128/vacciq_logo_1_1_exhsif.svg",
+                });
+              });
+            })
+            .catch((err) => console.log(err));
+        });
+      }
+      firebase.analytics();
+    </script>
+    <script>
+      function geoFindMe() {
+        function success(position) {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+          const token = localStorage.getItem("token");
+          const config = {
+            headers: {
+              "Content-type": "application/json",
+            },
+          };
+          if (token) config.headers["auth-token"] = token;
+          axios
+            .post(
+              "/api/user/addloc",
+              {
+                latitude,
+                longitude,
+              },
+              config
+            )
+            .then((res) => {});
+          //localStorage.setItem("fcmtoken", currentToken);
+          //console.log(currentToken);
+        }
+
+        function error() {
+          status.textContent = "Unable to retrieve your location";
+        }
+
+        if (!navigator.geolocation) {
+          status.textContent = "Geolocation is not supported by your browser";
+        } else {
+          status.textContent = "Locating…";
+          navigator.geolocation.getCurrentPosition(success, error);
+        }
+      }
+      geoFindMe();
+    </script> -->
+  </body>
+</html>
