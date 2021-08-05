@@ -1,1 +1,13 @@
 
+/* hero */
+
+.hero-img {
+    background-color: #f1cdd7;
+    height: 100vh;
+}
+
+h1 {
+    padding: 64px 64px 30px;
+    color: #865c6c;
+}
+
