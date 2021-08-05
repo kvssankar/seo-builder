@@ -11,3 +11,13 @@ h1 {
     color: #865c6c;
 }
 
+@media (max-width:960px) {
+    .hero-img {
+        display: none;
+    }
+
+    .col-7 {
+        min-width: 100%;
+        text-align: center;
+    }
+}
