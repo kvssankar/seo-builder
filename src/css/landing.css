@@ -1,23 +1,100 @@
+h1,h2{
+    font: bold 24px/29px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 
 /* hero */
 
-.hero-img {
+.hero-art {
     background-color: #f1cdd7;
     height: 100vh;
 }
 
-h1 {
-    padding: 64px 64px 30px;
+.hero-art h1,h2 {
+    padding: 5rem 1.7rem;
     color: #865c6c;
 }
 
+
+
+/* sign in */
+
+.sign-up {
+    text-align: right;
+}
+
+a {
+    color: #4f3cc9;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: color 200ms ease;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 20px;
+    height: 40px;
+    width: 20rem;
+}
+
+.btn-signin {
+    background-color: #ea4c89;
+}
+
+.icon-google {
+    margin: 0rem 0.2rem 0.2rem;
+    width: 0.8rem;
+}
+
+.main {
+    padding: 7rem 10rem;
+}
+hr {
+    overflow: visible;
+    padding: 0;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    color: #6e6d7a;
+    text-align: center
+}
+
+hr.divider::after {
+    content: 'Or';
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    font: normal 14px/14px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+    background: #fff;
+}
+
+.login-form a {
+    padding-left: 4rem;
+}
+
+/* mobile */
+
 @media (max-width:960px) {
-    .hero-img {
+    .hero-art {
         display: none;
     }
 
-    .col-7 {
+    .col-8 {
         min-width: 100%;
         text-align: center;
+    }
+
+    .main {
+        padding: 7rem 0rem;
     }
 }
