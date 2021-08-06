@@ -21,10 +21,10 @@ const LandingPage = () => {
             <form>
               <div className="login-form">
                 <label for="login">Username or Email Address</label><br/>
-                <input type="text" name="login" id="login"></input><br/>
+                <input className="text-input" type="text" name="login" id="login"></input><br/>
 
-                <label for="password">Password <a href="/">Forgot password</a></label><br/>
-                <input type="password" name="password" id="password"></input><br/>
+                <label class="password" for="password">Password <a href="/">Forgot password</a></label><br/>
+                <input className="text-input" type="password" name="password" id="password"></input><br/>
 
               </div>
 

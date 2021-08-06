@@ -1,3 +1,8 @@
+.container-fluid {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-y:hidden;
+}
+
 h1,h2{
     font: bold 24px/29px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -8,6 +13,11 @@ h1,h2{
 .hero-art {
     background-color: #f1cdd7;
     height: 100vh;
+}
+
+.hero-text {
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .hero-art h1,h2 {
@@ -21,6 +31,7 @@ h1,h2{
 
 .sign-up {
     text-align: right;
+    padding-top: 1.5rem;
 }
 
 a {
@@ -44,10 +55,13 @@ a {
     line-height: 20px;
     height: 40px;
     width: 20rem;
+    text-decoration: none;
 }
+
 
 .btn-signin {
     background-color: #ea4c89;
+    margin-top: 2rem;
 }
 
 .icon-google {
@@ -72,15 +86,46 @@ hr.divider::after {
     content: 'Or';
     display: inline-block;
     position: relative;
-    top: -7px;
+    top: -12px;
     font: normal 14px/14px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0 16px;
     background: #fff;
 }
 
-.login-form a {
-    padding-left: 4rem;
+
+label.password a {
+    font-weight: normal;
+    float: right;
+    position: relative;
+    font-size: 14px;
+    text-decoration: none;
 }
+
+label {
+    font: bold 15px/24px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 14px 0 4px;
+    color: #0d0c22;
+    display:block;
+}
+
+
+.text-input {
+    width: 100%;
+    margin-right: 8px;
+    border: 1px solid transparent;
+    height: 40px;
+    padding: 10px 16px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.text-input:hover {
+    border-color: rgba(0,0,0,0.1);
+    /* -webkit-box-shadow: 0 0 0 4px rgb(234 76 137 / 10%); */
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+
 
 /* mobile */
 
@@ -89,12 +134,31 @@ hr.divider::after {
         display: none;
     }
 
-    .col-8 {
-        min-width: 100%;
-        text-align: center;
+    .hero-text {
+        width: 100%;
+        max-width: 416px;
+        flex:none;
+        margin: 0 auto;
+        padding: 0 20px;
+        
     }
 
     .main {
         padding: 7rem 0rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .sign-up {
+        display: none;
+    }
+}
+
+@media (min-width: 960px)
+{
+    .btn-signin {
+        max-width: 200px;
     }
 }
