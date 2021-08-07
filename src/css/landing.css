@@ -20,16 +20,23 @@ h1,h2{
     overflow-y: hidden;
 }
 
-.hero-art h1,h2 {
-    padding: 2rem 1.7rem;
+.hero-img {
+    overflow: hidden;
+    width: 23rem;
+    height: 20rem;
+    padding-top: 2rem
+    
+}
+
+
+.hero-content {
+    padding: 4rem 1.7rem;
     color: #865c6c;
 }
 
-.hero-img {
-    overflow: hidden;
-    width: 20rem;
-    padding-left: 2rem;
-    
+
+.hero-content h1 {
+    padding-bottom: 1rem;
 }
 
 /* sign in */
