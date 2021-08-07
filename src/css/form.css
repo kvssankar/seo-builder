@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.form-container{
+    display: flex;
+    justify-content: flex-start;
+}
+.form{
+    font-size: large;
+}
+input[type=text] {
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+input[type=tel] {
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+input[type=date] {
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding: 0.5rem;
+    padding-right: 1.3rem;
+}
+.form{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 2rem;
+}
+.formName{
+    padding: 1rem 6rem;
+}
+.formComponent{
+    padding: 0.8rem 4.5rem;
+}
