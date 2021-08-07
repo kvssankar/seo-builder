@@ -11,7 +11,7 @@ h1,h2{
 /* hero */
 
 .hero-art {
-    background-color: #f1cdd7;
+    background-color: #a2cedf;
     height: 100vh;
 }
 
@@ -21,11 +21,16 @@ h1,h2{
 }
 
 .hero-art h1,h2 {
-    padding: 5rem 1.7rem;
+    padding: 2rem 1.7rem;
     color: #865c6c;
 }
 
-
+.hero-img {
+    overflow: hidden;
+    width: 20rem;
+    padding-left: 2rem;
+    
+}
 
 /* sign in */
 
@@ -60,7 +65,7 @@ a {
 
 
 .btn-signin {
-    background-color: #ea4c89;
+    background-color:  #26a1d1;
     margin-top: 2rem;
 }
 

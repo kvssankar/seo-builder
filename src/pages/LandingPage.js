@@ -8,7 +8,9 @@ const LandingPage = () => {
       <div className="row">
         <div className="col-4 hero-art">
           <h1>SEO Builder</h1>
-          <h2>Your one-stop destination for everything</h2>
+          <h2>Your one-stop destination for all things web</h2>
+          {/* <img class="hero-img" src="https://cdn.dribbble.com/assets/auth/sign-in-a63d9cf6c1f626ccbde669c582b10457b07523adb58c2a4b46833b7b4925d9a3.jpg"/> */}
+          <img class="hero-img" src="../imgs/undraw_websiteBuilder.svg"/>
         </div>
         <div className="col-8 hero-text">
           <div className="sign-up">
