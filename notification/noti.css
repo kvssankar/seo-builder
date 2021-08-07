@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+.card-body {
+    padding: 0%;
+}
+.card-text {
+    padding: 1rem;
+    margin: 0%;
+    font-size: 0.75rem;
+    text-align: center;
+}
+.btn-lg {
+    width: 100%;
+    border-radius: 0%;
+    font-size: 1rem;
+    text-align: center;
+    border-style: solid;
+    color: red
+}
+.top-title {
+    padding-top: 1rem;
+    color: blue;
+}
+.card {
+    border-radius: 1rem;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.bottom-button {
+    border-radius: 0 0 1rem 1rem;
+}
+.hrr {
+    padding: 0%;
+    margin: 0%;
+}
+
+.title-of-card {
+    font-family: 'Roboto Condensed', sans-serif;
+}
