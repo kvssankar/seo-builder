@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 .card-body {
-    padding: 0%;
+    padding: 0.5rem;
 }
 .card-text {
     padding: 1rem;
@@ -24,6 +24,7 @@
 .card {
     border-radius: 1rem;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-shadow: 1px 1px black;
 }
 .bottom-button {
     border-radius: 0 0 1rem 1rem;
@@ -35,4 +36,5 @@
 
 .title-of-card {
     font-family: 'Roboto Condensed', sans-serif;
+    margin: 0%;
 }
