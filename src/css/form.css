@@ -43,20 +43,20 @@ input[type=text] {
     border: 2px solid grey;
     border-radius: 8px;
     padding: 0.4rem 2rem;
-    box-shadow: 3px 3px #b1b5b693;
+    box-shadow: 3px 3px #dfdfdf93;
 }
 input[type=tel] {
     border: 2px solid grey;
     border-radius: 8px;
     padding: 0.4rem 2rem;
-    box-shadow: 3px 3px #b1b5b693;
+    box-shadow: 3px 3px #dfdfdf93;
 }
 input[type=date] {
     border: 2px solid grey;
     border-radius: 8px;
     padding: 0.4rem 2rem;
     padding-right: 2.9rem;
-    box-shadow: 3px 3px #b1b5b693;
+    box-shadow: 3px 3px #dfdfdf93;
 }
 .switch {
     position: relative;
