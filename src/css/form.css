@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -26,6 +27,8 @@ body{
 }
 .formP{
     padding: 2rem 0rem;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .formComponent{
     padding: 0.8rem 4.5rem;
