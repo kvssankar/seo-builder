@@ -1,9 +1,46 @@
-.preview-image-div {
-    border: 1px solid #dadde1;
-    width: 500px;
-    height: 261px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}   
+.preview-component {
+  width: 31rem;
+}
 
+.preview-image-div {
+  border: 1px solid #dadde1;
+  width: 30rem;
+  height: 261px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mytextdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #a3b3ca;
+}
+.mytexttitle {
+  flex-grow: 0;
+  color: #a3b3ca;
+  padding-right: 0.5rem;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #a3b3ca;
+}
+
+.preview-component-description {
+  padding-top: 0.3rem;
+  color: #606770;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  width: 30rem;
+}
+.preview-component-text {
+  width: 30.2rem;
+  background-color: #f2f3f5;
+}
+.preview-component-mini-title {
+  color: #606770;
+}
