@@ -1,0 +1,106 @@
+.container-fluid {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-y:hidden;
+}
+
+h1, h2{
+    font: bold 24px/29px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero-content h1 {
+    font: bold 32px/38px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* hero */
+
+.hero-art {
+    background-color: #a2cedf;
+    height: 100vh;
+}
+
+.hero-text {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.hero-img {
+    overflow: hidden;
+    width: 23rem;
+    height: 20rem;
+    padding-top: 2rem
+    
+}
+
+
+.hero-content {
+    padding: 4rem 1.7rem;
+    color: #865c6c;
+}
+
+
+.hero-content h1 {
+    padding-bottom: 1rem;
+}
+
+hr {
+    overflow: visible;
+    padding: 0;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    color: #6e6d7a;
+    text-align: center
+}
+
+a {
+    color: #4f3cc9;
+    text-decoration: none;
+}
+
+.firebase {
+    padding: 4rem 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: color 200ms ease;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 20px;
+    height: 40px;
+    width: 20rem;
+    text-decoration: none;
+    margin:0.5rem 0rem;
+}
+
+
+/* mobile */
+
+@media (max-width:960px) {
+    .hero-art {
+        display: none;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 416px;
+        flex:none;
+        margin: 0 auto;
+        padding: 0 20px;
+        
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+}
