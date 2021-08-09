@@ -38,6 +38,8 @@ const LandingPage = () => {
 
             <button className= "btn" type="submit">GENERATE NEW PRIVATE KEY</button>
 
+            <p><small>Last Key downloaded:</small></p>
+
 
           </div>
           
