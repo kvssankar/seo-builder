@@ -35,49 +35,28 @@ const LandingPage = () => {
               <label class="form-check-label" for="inlineRadio2">Python</label>
             </div>
             <hr/>
-
+            <div className="copy-text">
+              {/* <pre>
+                <code>
+                  import SyntaxHighlighter from 'react-syntax-highlighter';
+                  import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+                  const Component = () => {
+                    const codeString = '(num) => num + 1';
+                    return (
+                      <SyntaxHighlighter language="javascript" style={docco}>
+                        {codeString}
+                      </SyntaxHighlighter>
+                    );
+                  };
+                </code>
+              </pre> */}
+            </div>
             <button className= "btn" type="submit">GENERATE NEW PRIVATE KEY</button>
 
             <p><small>Last Key downloaded:</small></p>
 
 
           </div>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-          {/* <div className="sign-up">
-            Not a member? <a href="">Sign up now</a>
-          </div>
-          <div className="main">
-            <h1>Sign in to SEO Builder</h1>
-            <button className= "btn" type="submit"><img className="icon-google" src="../imgs/google.png" alt="icon"/>   Sign in with Google</button>
-            <hr className="divider"/>
-            <form>
-              <div className="login-form">
-                <label for="login">Username or Email Address</label><br/>
-                <input className="text-input" type="text" name="login" id="login"></input><br/>
-
-                <label class="password" for="password">Password <a href="/">Forgot password</a></label><br/>
-                <input className="text-input" type="password" name="password" id="password"></input><br/>
-
-              </div>
-
-            </form>
-            
-            <button className= "btn btn-signin" type="submit">Sign in</button>
-
-          
-          </div> */}
         </div>
       </div>
     </div>
