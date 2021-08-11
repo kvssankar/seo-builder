@@ -2,21 +2,54 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import "../css/tabs.css";
+import "../css/form.css";
 import Basic from "../components/Basic";
 
 const AppPage = () => (
-  <div className="container-fluid">
+  <div className="container-fluid" style={{ height: "100vh" }}>
     <div className="row">
-      <div className="col-4 hero-art">
+      <div className="col-4 hero-art oy">
         <div className="hero-content">
-          <h1>SEO Builder</h1>
-          <h2>Your one-stop destination for all things web</h2>
+          <div class="form-container">
+            <div class="form">
+              <div class="formName">
+                <div class="formP">Dane Firmy</div>
+              </div>
+              <div class="formMain">
+                <div class="formComponent">
+                  <input type="text" placeholder="Nazwa" />
+                </div>
+                <div class="formComponent">
+                  <input type="tel" placeholder="NIP" />
+                </div>
+                <div class="formComponent">
+                  <input type="tel" placeholder="NIP" />
+                </div>
+                <div class="formComponent">
+                  <input type="tel" placeholder="NIP" />
+                </div>
+                <div class="formComponent">
+                  <input type="tel" placeholder="NIP" />
+                </div>
+                <div class="formComponent">
+                  <input type="tel" placeholder="NIP" />
+                </div>
+                <div class="formComponent">
+                  <input type="tel" placeholder="NIP" />
+                </div>
+                <div class="formComponent">
+                  <input type="date" placeholder="Data" />
+                </div>
+                <div class="formComponent">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <img
-          class="hero-img"
-          alt="img"
-          src="../imgs/undraw_websiteBuilder.svg"
-        />
       </div>
       <div className="col-8 hero-text">
         <Tabs>
@@ -26,7 +59,7 @@ const AppPage = () => (
             <Tab>FCM</Tab>
           </TabList>
 
-          <TabPanel>
+          <TabPanel className="oy" style={{ height: "100vh" }}>
             <Basic />
           </TabPanel>
           <TabPanel>

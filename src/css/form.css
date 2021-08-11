@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+.form {
+  height: 100%;
+  border: 1px solid #f8485e;
+  border-radius: 10px;
+}
+
+.form .form-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.oy {
+  overflow-y: scroll;
+}
+.oy::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.oy::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.oy::-webkit-scrollbar-thumb {
+  background: #f8485e;
+}
+
+/* Handle on hover */
+.oy::-webkit-scrollbar-thumb:hover {
+  background: #f8485e;
+}
+.form .formName {
+  padding: 0rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #f8485e;
+  border-radius: 10px 10px 0 0;
+}
+.form .formP {
+  padding: 1rem 0rem;
+}
+.form .formMain {
+  border-radius: 0px 0px 30px 0px;
+  padding: 3rem 0rem;
+}
+.form .formComponent {
+  padding: 0.8rem 2.2rem;
+}
+.form input[type="text"] {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 0.4rem 2rem;
+  box-shadow: 3px 3px #dfdfdf 93;
+}
+.form input[type="tel"] {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 0.4rem 2rem;
+  box-shadow: 3px 3px #dfdfdf 93;
+}
+.form input[type="date"] {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 0.4rem 2rem;
+  padding-right: 2.9rem;
+  box-shadow: 3px 3px #dfdfdf 93;
+}
+.form .switch {
+  position: relative;
+  display: inline-block;
+  width: 66px;
+  height: 32px;
+}
+.form .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.form .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(143, 138, 138, 0.685);
+  border: 2px solid #003049;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.form .slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.form input:checked + .slider {
+  background-color: #003049;
+}
+.form input:focus + .slider {
+  box-shadow: 0 0 1px #e5e5e5;
+}
+.form input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(31px);
+}
+.form .slider.round {
+  border-radius: 34px;
+}
+.form .slider.round:before {
+  border-radius: 50%;
+}
